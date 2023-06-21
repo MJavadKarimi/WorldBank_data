@@ -1,0 +1,300 @@
+http://api.worldbank.org/v2/country?format=json&per_page=10000
+1A                             Arab World
+1W                             World
+4E                             East Asia & Pacific (excluding high income)
+6F                             IDA countries classified as fragile situations, excluding Sub-Saharan Africa
+6N                             IDA countries not classified as fragile situations, excluding Sub-Saharan Africa
+6X                             Non-resource rich Sub-Saharan Africa countries
+7E                             Europe & Central Asia (excluding high income)
+8S                             South Asia
+A4                             Sub-Saharan Africa excluding South Africa
+A5                             Sub-Saharan Africa excluding South Africa and Nigeria
+A9                             Africa
+AD                             Andorra
+AE                             United Arab Emirates
+AF                             Afghanistan
+AG                             Antigua and Barbuda
+AL                             Albania
+AM                             Armenia
+AO                             Angola
+AR                             Argentina
+AS                             American Samoa
+AT                             Austria
+AU                             Australia
+AW                             Aruba
+AZ                             Azerbaijan
+B1                             IBRD countries classified as high income
+B2                             Latin America & the Caribbean (IBRD-only countries)
+B3                             Middle East & North Africa (IBRD-only countries)
+B4                             East Asia & Pacific (IBRD-only countries)
+B6                             Sub-Saharan Africa (IBRD-only countries)
+B7                             Europe & Central Asia (IBRD-only countries)
+B8                             Central Europe and the Baltics
+BA                             Bosnia and Herzegovina
+BB                             Barbados
+BD                             Bangladesh
+BE                             Belgium
+BF                             Burkina Faso
+BG                             Bulgaria
+BH                             Bahrain
+BI                             Burundi
+BJ                             Benin
+BM                             Bermuda
+BN                             Brunei Darussalam
+BO                             Bolivia
+BR                             Brazil
+BS                             Bahamas, The
+BT                             Bhutan
+BW                             Botswana
+BY                             Belarus
+BZ                             Belize
+C4                             East Asia and the Pacific (IFC classification)
+C5                             Europe and Central Asia (IFC classification)
+C6                             Latin America and the Caribbean (IFC classification)
+C7                             Middle East and North Africa (IFC classification)
+C8                             South Asia (IFC classification)
+C9                             Sub-Saharan Africa (IFC classification)
+CA                             Canada
+CD                             Congo, Dem. Rep.
+CF                             Central African Republic
+CG                             Congo, Rep.
+CH                             Switzerland
+CI                             Cote d'Ivoire
+CL                             Chile
+CM                             Cameroon
+CN                             China
+CO                             Colombia
+CR                             Costa Rica
+CU                             Cuba
+CV                             Cabo Verde
+CW                             Curacao
+CY                             Cyprus
+CZ                             Czechia
+D2                             Latin America & the Caribbean (IDA-eligible countries)
+D3                             Middle East & North Africa (IDA-eligible countries)
+D4                             East Asia & Pacific (IDA-eligible countries)
+D5                             South Asia (IDA-eligible countries)
+D6                             Sub-Saharan Africa (IDA-eligible countries)
+D7                             Europe & Central Asia (IDA-eligible countries)
+D8                             IDA countries classified as Fragile Situations
+D9                             IDA countries not classified as Fragile Situations
+DE                             Germany
+DJ                             Djibouti
+DK                             Denmark
+DM                             Dominica
+DO                             Dominican Republic
+DZ                             Algeria
+EC                             Ecuador
+EE                             Estonia
+EG                             Egypt, Arab Rep.
+ER                             Eritrea
+ES                             Spain
+ET                             Ethiopia
+EU                             European Union
+F1                             Fragile and conflict affected situations
+F6                             IDA countries in Sub-Saharan Africa classified as fragile situations 
+FI                             Finland
+FJ                             Fiji
+FM                             Micronesia, Fed. Sts.
+FO                             Faroe Islands
+FR                             France
+GA                             Gabon
+GB                             United Kingdom
+GD                             Grenada
+GE                             Georgia
+GH                             Ghana
+GI                             Gibraltar
+GL                             Greenland
+GM                             Gambia, The
+GN                             Guinea
+GQ                             Equatorial Guinea
+GR                             Greece
+GT                             Guatemala
+GU                             Guam
+GW                             Guinea-Bissau
+GY                             Guyana
+HK                             Hong Kong SAR, China
+HN                             Honduras
+HR                             Croatia
+HT                             Haiti
+HU                             Hungary
+ID                             Indonesia
+IE                             Ireland
+IL                             Israel
+IM                             Isle of Man
+IN                             India
+IQ                             Iraq
+IR                             Iran, Islamic Rep.
+IS                             Iceland
+IT                             Italy
+JG                             Channel Islands
+JM                             Jamaica
+JO                             Jordan
+JP                             Japan
+KE                             Kenya
+KG                             Kyrgyz Republic
+KH                             Cambodia
+KI                             Kiribati
+KM                             Comoros
+KN                             St. Kitts and Nevis
+KP                             Korea, Dem. People's Rep.
+KR                             Korea, Rep.
+KW                             Kuwait
+KY                             Cayman Islands
+KZ                             Kazakhstan
+LA                             Lao PDR
+LB                             Lebanon
+LC                             St. Lucia
+LI                             Liechtenstein
+LK                             Sri Lanka
+LR                             Liberia
+LS                             Lesotho
+LT                             Lithuania
+LU                             Luxembourg
+LV                             Latvia
+LY                             Libya
+M1                             Middle East (developing only)
+M2                             North Africa
+MA                             Morocco
+MC                             Monaco
+MD                             Moldova
+ME                             Montenegro
+MF                             St. Martin (French part)
+MG                             Madagascar
+MH                             Marshall Islands
+MK                             North Macedonia
+ML                             Mali
+MM                             Myanmar
+MN                             Mongolia
+MO                             Macao SAR, China
+MP                             Northern Mariana Islands
+MR                             Mauritania
+MT                             Malta
+MU                             Mauritius
+MV                             Maldives
+MW                             Malawi
+MX                             Mexico
+MY                             Malaysia
+MZ                             Mozambique
+N6                             IDA countries in Sub-Saharan Africa not classified as fragile situations 
+NA                             Namibia
+NC                             New Caledonia
+NE                             Niger
+NG                             Nigeria
+NI                             Nicaragua
+NL                             Netherlands
+NO                             Norway
+NP                             Nepal
+NR                             Nauru
+NZ                             New Zealand
+OE                             OECD members
+OM                             Oman
+PA                             Panama
+PE                             Peru
+PF                             French Polynesia
+PG                             Papua New Guinea
+PH                             Philippines
+PK                             Pakistan
+PL                             Poland
+PR                             Puerto Rico
+PS                             West Bank and Gaza
+PT                             Portugal
+PW                             Palau
+PY                             Paraguay
+QA                             Qatar
+R6                             Resource rich Sub-Saharan Africa countries
+RO                             Romania
+RS                             Serbia
+RU                             Russian Federation
+RW                             Rwanda
+S1                             Small states
+S2                             Pacific island small states
+S3                             Caribbean small states
+S4                             Other small states
+SA                             Saudi Arabia
+SB                             Solomon Islands
+SC                             Seychelles
+SD                             Sudan
+SE                             Sweden
+SG                             Singapore
+SI                             Slovenia
+SK                             Slovak Republic
+SL                             Sierra Leone
+SM                             San Marino
+SN                             Senegal
+SO                             Somalia
+SR                             Suriname
+SS                             South Sudan
+ST                             Sao Tome and Principe
+SV                             El Salvador
+SX                             Sint Maarten (Dutch part)
+SY                             Syrian Arab Republic
+SZ                             Eswatini
+T2                             Latin America & the Caribbean (IDA & IBRD countries)
+T3                             Middle East & North Africa (IDA & IBRD countries)
+T4                             East Asia & Pacific (IDA & IBRD countries)
+T5                             South Asia (IDA & IBRD)
+T6                             Sub-Saharan Africa (IDA & IBRD countries)
+T7                             Europe & Central Asia (IDA & IBRD countries)
+TC                             Turks and Caicos Islands
+TD                             Chad
+TG                             Togo
+TH                             Thailand
+TJ                             Tajikistan
+TL                             Timor-Leste
+TM                             Turkmenistan
+TN                             Tunisia
+TO                             Tonga
+TR                             Turkiye
+TT                             Trinidad and Tobago
+TV                             Tuvalu
+TW                             Taiwan, China
+TZ                             Tanzania
+UA                             Ukraine
+UG                             Uganda
+US                             United States
+UY                             Uruguay
+UZ                             Uzbekistan
+V1                             Pre-demographic dividend
+V2                             Early-demographic dividend
+V3                             Late-demographic dividend
+V4                             Post-demographic dividend
+VC                             St. Vincent and the Grenadines
+VE                             Venezuela, RB
+VG                             British Virgin Islands
+VI                             Virgin Islands (U.S.)
+VN                             Vietnam
+VU                             Vanuatu
+WS                             Samoa
+XC                             Euro area
+XD                             High income
+XE                             Heavily indebted poor countries (HIPC)
+XF                             IBRD only
+XG                             IDA total
+XH                             IDA blend
+XI                             IDA only
+XJ                             Latin America & Caribbean (excluding high income)
+XK                             Kosovo
+XL                             Least developed countries: UN classification
+XM                             Low income
+XN                             Lower middle income
+XO                             Low & middle income
+XP                             Middle income
+XQ                             Middle East & North Africa (excluding high income)
+XT                             Upper middle income
+XU                             North America
+XY                             Not classified
+YE                             Yemen, Rep.
+Z4                             East Asia & Pacific
+Z7                             Europe & Central Asia
+ZA                             South Africa
+ZB                             IBRD, including blend
+ZF                             Sub-Saharan Africa (excluding high income)
+ZG                             Sub-Saharan Africa 
+ZH                             Africa Eastern and Southern
+ZI                             Africa Western and Central
+ZJ                             Latin America & Caribbean 
+ZM                             Zambia
+ZQ                             Middle East & North Africa
+ZT                             IDA & IBRD total
+ZW                             Zimbabwe

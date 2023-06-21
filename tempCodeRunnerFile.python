@@ -1,0 +1,9 @@
+from tqdm import tqdm
+
+# define a list to loop over
+my_list = [1, 2, 3, 4, 5]
+
+# wrap the list with tqdm to add a progress bar
+for item in tqdm(my_list):
+    # do some processing on each item in the list
+    print(item ** 2)
