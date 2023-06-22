@@ -18,3 +18,4 @@ with open("indicators.csv", "w", newline="") as outfile:
     writer.writerow(["id", "name"])
     for row in indicators:
         writer.writerow(row)
+        

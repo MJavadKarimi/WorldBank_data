@@ -17,11 +17,10 @@ sentry_sdk.init(
     traces_sample_rate=1.0
 )
 
-# with open('indicators_copy.json') as file:
-#     indicators = json.load(file)
+with open('exported_data/indicators_copy.json') as file:
+    indicators = json.load(file)
 
-# indicators = ["fin1.t.d.6","wpremia_M","110100","B2i"]
-indicators = ["v_F_nsk","wpremia_M","110100","B2i","AG.PRD.CROP.XD","fin1.t.d.6"]
+# indicators = ["v_F_nsk","wpremia_M","110100","B2i","AG.PRD.CROP.XD","fin1.t.d.6"]
 
 def save_datas_to_json(data, fileName=''):
     if fileName.endswith('.json'):
@@ -78,12 +77,12 @@ def collect_data():
                             response[1][item]["date"],
                             response[1][item]["value"])
 
-                    query = "INSERT INTO test (indicator_id, country_id, date, amount) VALUES (%s, %s, %s, %s)"
+                    query = "INSERT INTO datas (indicator_id, country_id, date, amount) VALUES (%s, %s, %s, %s)"
                     cur.execute(query, data)
 
                 # increment the page value to fetch the next page of data
                 page += 1
-                time.sleep(0.5)
+                time.sleep(1)
 
                 # check if there are more pages to fetch
                 if page > response[0]['pages']:
@@ -98,15 +97,15 @@ def collect_data():
                 log('..... failed .....')
                 break
         
-        time.sleep(0.5)
+        conn.commit()
+        time.sleep(1)
 
         # this is for API request limitation. I want to fetch just 2000 indicator datas for each time
         counter += 1
-        if counter >= 2000:
+        if counter >= 50:
             break
 
     # Commit the changes to the database and close the cursor and connection
-    conn.commit()
     cur.close()
     conn.close()
 
@@ -114,7 +113,6 @@ def collect_data():
     save_datas_to_json(indicators, "indicators_copy.json" )
 
     save_datas_to_json(failed_indicators, 'failed_indicators.json')
-    print(indicators_list)
 
 
 collect_data()
