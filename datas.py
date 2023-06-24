@@ -17,10 +17,6 @@ sentry_sdk.init(
     traces_sample_rate=1.0
 )
 
-with open('exported_data/indicators_copy.json') as file:
-    indicators = json.load(file)
-
-# indicators = ["v_F_nsk","wpremia_M","110100","B2i","AG.PRD.CROP.XD","fin1.t.d.6"]
 
 def save_datas_to_json(data, fileName=''):
     if fileName.endswith('.json'):
@@ -55,6 +51,9 @@ def collect_data():
     # Create a cursor object from the connection
     cur = conn.cursor()
 
+    with open('exported_data/indicators_copy.json') as file:
+        indicators = json.load(file)
+
     with open('exported_data/failed_indicators.json') as file:
         failed_indicators = json.load(file)
 
@@ -87,14 +86,14 @@ def collect_data():
                 # check if there are more pages to fetch
                 if page > response[0]['pages']:
                     # save_datas_to_json(indicator_datas, f"{datetime.now().strftime('%d-%m-%Y,%H-%M-%S')}-{indicator}.json" )
-                    log('....... saved .......')
+                    log('saved')
                     break
             except:
                 # # check if the indicator was not found or returns bad response. It may have been deleted or archived.
                 # errors.extend(response)
                 # save_datas_to_json(errors, f'ERROR_{indicator}.log')
                 failed_indicators.append(indicator)
-                log('..... failed .....')
+                log('failed')
                 break
         
         conn.commit()
@@ -102,7 +101,7 @@ def collect_data():
 
         # this is for API request limitation. I want to fetch just 2000 indicator datas for each time
         counter += 1
-        if counter >= 500:
+        if counter >= 50:
             break
 
     # Commit the changes to the database and close the cursor and connection
@@ -114,5 +113,7 @@ def collect_data():
 
     save_datas_to_json(failed_indicators, 'failed_indicators.json')
 
-
-collect_data()
+for i in range(40):
+    collect_data()
+    log(f"-------------------> loop {i+1} complited")
+    time.sleep(3)
