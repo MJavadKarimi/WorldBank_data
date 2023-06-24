@@ -102,7 +102,7 @@ def collect_data():
 
         # this is for API request limitation. I want to fetch just 2000 indicator datas for each time
         counter += 1
-        if counter >= 50:
+        if counter >= 500:
             break
 
     # Commit the changes to the database and close the cursor and connection
