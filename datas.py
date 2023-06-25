@@ -101,7 +101,7 @@ def collect_data():
 
         # this is for API request limitation. I want to fetch just 2000 indicator datas for each time
         counter += 1
-        if counter >= 50:
+        if counter >= 20:
             break
 
     # Commit the changes to the database and close the cursor and connection
@@ -113,7 +113,7 @@ def collect_data():
 
     save_datas_to_json(failed_indicators, 'failed_indicators.json')
 
-for i in range(40):
+for i in range(10):
     collect_data()
     log(f"-------------------> loop {i+1} complited")
     time.sleep(3)
