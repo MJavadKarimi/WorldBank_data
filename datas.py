@@ -76,7 +76,7 @@ def collect_data():
                             response[1][item]["date"],
                             response[1][item]["value"])
 
-                    query = "INSERT INTO datas (indicator_id, country_id, date, amount) VALUES (%s, %s, %s, %s)"
+                    query = "INSERT INTO datas (indicator, country, date, amount) VALUES (%s, %s, %s, %s)"
                     cur.execute(query, data)
 
                 # increment the page value to fetch the next page of data
@@ -101,7 +101,7 @@ def collect_data():
 
         # this is for API request limitation. I want to fetch just 2000 indicator datas for each time
         counter += 1
-        if counter >= 20:
+        if counter >= 30:
             break
 
     # Commit the changes to the database and close the cursor and connection
@@ -113,7 +113,7 @@ def collect_data():
 
     save_datas_to_json(failed_indicators, 'failed_indicators.json')
 
-for i in range(10):
+for i in range(50):
     collect_data()
     log(f"-------------------> loop {i+1} complited")
     time.sleep(3)
