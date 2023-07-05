@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>comparison of {{ indicator }}: {{ country1 }} vs {{ country2 }}</title>
+</head>
+<body>
+    <h1>comparison of {{ indicator }}: {{ country1 }} vs {{ country2 }}</h1>
+
+        <h2>{{ country1 }}:</h2>
+        <ul>
+            {% for data in data1 %}
+                <li>{{ data }}</li>
+            {% endfor %}
+        </ul>
+
+        <h2>{{ country2 }}:</h2>
+        <ul>
+            {% for data in data2 %}
+                <li>{{ data }}</li>
+            {% endfor %}
+        </ul>
+</body>
+</html>
