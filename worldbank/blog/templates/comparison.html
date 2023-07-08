@@ -15,7 +15,6 @@
         }
         .country-data {
             width: 45%;
-            text-align: center;
             border: 1px solid #ccc;
             padding: 20px;
             background-color: #f5f5f5;
@@ -31,7 +30,7 @@
         }
         .country-data th, .country-data td {
             padding: 8px;
-            text-align: left;
+            text-align: center;
             border-bottom: 1px solid #ddd;
         }
         .country-data th {
@@ -56,7 +55,8 @@
                     <tbody>
                         {% for data in data1 %}
                             <tr>
-                                <td>{{ data }}</td>
+                                <td>{{ data.date }}</td>
+                                <td>{{ data.amount }}</td>
                             </tr>
                         {% endfor %}
                     </tbody>
@@ -75,7 +75,8 @@
                     <tbody>
                         {% for data in data2 %}
                             <tr>
-                                <td>{{ data }}</td>
+                                <td>{{ data.date }}</td>
+                                <td>{{ data.amount }}</td>
                             </tr>
                         {% endfor %}
                     </tbody>
